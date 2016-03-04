@@ -1,0 +1,4 @@
+[submodule "modules/safeveypuppet"]
+	path = modules/safeveypuppet
+	url = https://github.com/Safevey/safeveypuppet.git
+	branch = master
