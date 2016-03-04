@@ -24,4 +24,11 @@ Vagrant.configure(2) do |config|
   config.vm.provision :shell do |shell|
     shell.path = "scripts/downloadPuppetModules.sh"
   end
+  
+  config.vm.provision :puppet do |puppet|
+	puppet.environment_path = "environments"
+	puppet.environment		= "development"
+	puppet.module_path		= "modules"
+  end
+  
 end
