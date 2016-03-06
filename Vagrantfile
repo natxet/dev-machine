@@ -31,4 +31,8 @@ Vagrant.configure(2) do |config|
 	puppet.module_path		= "modules"
   end
   
+  config.vm.provision :shell do |shell|
+    shell.path = "scripts/complements.sh"
+  end
+  
 end
